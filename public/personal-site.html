@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/personal_site_layout.css">
-
+  <style type="text/css">
+    .parallax-container {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 
@@ -32,8 +37,10 @@
         <li><a href="#">Who am I?</a></li>
         <li><a href="#">Portfolio</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>            
-        <li><a href="#">Email Me</a></li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+        </li>         
+        <li>
+          <a href="#">Email Me</a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -60,37 +67,33 @@
 
 <!-- /.begin-parallex scrolling -->
 
-<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 319px; left: 0px; height: 521px; width: 696px;"><img class="parallax-slider" src="img/america.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -317.2px; left: 0px; height: 708px; width: 696px; max-width: none;"></div>
 
-<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 702px; left: 0px; height: 521px; width: 696px;"><img class="parallax-slider" src="img/view.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -561.6px; left: -178px; height: 677px; width: 1053px; max-width: none;"></div>
-
-<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 707px; left: 0px; height: 521px; width: 696px;"><img class="parallax-slider" src="img/field.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -574.6px; left: 0px; height: 696px; width: 696px; max-width: none;"></div>
-
-<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: -175px; left: 0px; height: 521px; width: 696px;"><img class="parallax-slider" src="img/code2.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: 140px; left: -178px; height: 677px; width: 1053px; max-width: none;"></div>
 
 
 <!-- first section -->
-  <section>
-      <div class='container'>  
-        <div class='col-md-12 text-center'"><img src="img/logo.png" id="logo"></div>
+<section>
+  <div class='container'>  
+      <div class='col-md-12 text-center'><img src="img/logo.png" id="logo"></div>
       <h1 style="text-align: center">Who am I?</h1>
-        <div class='row'>
+    <hr>
+      <div class='row'>
           <p class="col-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor.</p>
         
-        <img class='col-md-2' src="img/pic2.jpg" style="border-radius: 50%;padding:1px;border:thin solid black; height: 7%; width: 15%; display: right">
+          <img class='col-md-2' src="img/pic2.jpg" style="border-radius: 50%;padding:1px;border:thin solid black; height: 7%; width: 15%; display: right">
         
 
-        <div class='col-md-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <div class='col-md-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor.</div>
+          consequat. Duis aute irure dolor.
+          </div>
 
-        </div>
+      </div>
 
-        <div class='row'>
+      <div class='row'>
           <p class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -99,103 +102,110 @@
           <p class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor.</div> 
+              consequat. Duis aute irure dolor.</p> 
 
-        </div>
+      </div>
     </div>       
-  </section>
+</section>
+
 <!-- end first section -->
-    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/code2.jpg" data-natural-width="1400" data-natural-height="900" style="height: 501px;"></div>
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/code2.jpg" data-natural-width="1400" data-natural-height="900"></div>
 
 <!-- second section -->
       <section>  
         <div class="container">
-          <div class='row'></div>
+          <div class='row'>
               <h2 id='skills'>Skills</h2>
-                <ul class="col-md-3 text-center" id="list" style="font-size: 24px">
-                  <li>HTML5</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
+    <hr>          
+              <div class='col-md-offset-3 col-md-3'>
+                <ul id="list" style="font-size: 24px">
+                  <i class="fa fa-check" id='check' aria-hidden="true"> HTML5</i><br>
+                  <i class="fa fa-check" id='check' aria-hidden="true"> CSS</i><br>
+                  <i class="fa fa-check" id='check' aria-hidden="true"> Javascript</i>
                 </ul>
-                <div class='col-md-6'></div>
-                <ul class="col-md-3" id="list" style="font-size: 24px">
-                  <li>Final Cut Pro</li>
-                  <li>Adobe Premiere</li>
-                  <li>Microsoft Office</li>
+              </div>
+              <div class='col-md-6'>
+                <ul id="list" style="font-size: 24px">
+                  <i class="fa fa-check" id='check' aria-hidden="true"> Final Cut Pro</i><br>
+                  <i class="fa fa-check" id='check' aria-hidden="true"> Adobe Premiere</i><br>
+                  <i class="fa fa-check" id='check' aria-hidden="true"> Microsoft Office</i>
                 </ul>
+              </div>
           </div>
         </div>
       </section>
 <!-- end second section -->
-  <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img/field.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 501px;"></div>
+  <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img/field.jpg" data-natural-width="1400" data-natural-height="1400"></div>
 
-
+ <section> 
     <div class="container text-center">
       <div class='row'>
         <h1>My Projects</h1>
         <h4>Feel Free to Check em' Out</h4>
-            <ul class="col-lg-4 col-md-3 col-sm-2 text-center" style='font-size: 24px'>
-          <li><a class="fancy" href="#"><img src="" alt=""></a></li>
-            <li><a class="fancy" href="#"><img src="" alt=""></a></li>
-            <li><a class="fancy" href="#"><img src="" alt=""></a></li>
-            <li><a class="fancy" href="#"><img src="" alt=""></a></li>
-            </ul>
+    <hr>
+          <div class="col-md-6 col-md-offset-3" style='font-size: 24px'>
+              <ul>
+              <a class="fancy" href="#">Simple Simpsons: A Memory Game<img src="img/screen_shot.png" style='height: 65%; width: 65%' alt="Simple Simon"></a>
+              <li><a class="fancy" href="#"><img src="" alt=""></a></li>
+              <li><a class="fancy" href="#"><img src="" alt=""></a></li>
+              <li><a class="fancy" href="#"><img src="" alt=""></a></li>
+              </ul>
+          </div>
       </div>
     </div>
+ </section> 
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/view.jpg" data-natural-width="1400" data-natural-height="900" style="height: 501px;"></div>
+<!--     <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/view.jpg" data-natural-width="1400" data-natural-height="900" style="height: 501px;"></div> -->
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/america.jpg" data-natural-width="750" data-natural-height="763" style="height: 501px;"></div>
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/america.jpg" data-natural-width="750" data-natural-height="763"></div>
 
+ <section> 
     <div class="container">
       <div class='row'>
-        <h1 class='col-md-12'>Contact</h1>
-        <h4 class="col-md-12">Reach Me</h4>
-          <p class='col-md-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <h1 class='text-center'>Contact</h1>
+        <h4 class='text-center'>Reach Me</h4>
+    <hr> 
+          <p class='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris.</p>
       </div>
-    </div>
 
-<!-- third section -->
-
-  <section>
-    <div class="container">
-      <div class='row'>
-              <form role="form">
-        <div class="col-md-4">
-          <label for="name">Name:</label>
-          <input type="name" class="form-control" id="name"> 
+      <form role="form">
+        <div class='row'>  
+          <div class="col-md-4">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" id="name"> 
+          </div>
         </div>
-      </div>
 
-      <div class='row'>
+        <div class='row'>
               <!-- <form role='form'> -->
-        <div class="col-md-4">
-          <label for="email">Email address:</label>
-          <input type="email" class="form-control" id="email">
+          <div class="col-md-4">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
         </div>
-      </div>
 
-      <div class='row'>
+        <div class='row'>
               <!-- <form role='form'> -->      
           <div class="col-md-4">
             <label for="phone">Phone:</label>
             <input type="phone" class="form-control" id="phone">
           </div>
-      </div>
+       </div>
       
-      <div class='row'>
+        <div class='row'>
               <!-- <form role='form'> -->      
-      <div class="col-md-4">
+          <div class="col-md-4">
             <label for='message'>Message:</label>
             <textarea class="form-control" rows="3">Message</textarea>
-      <div>    
-          <button type="submit" class="btn btn-default">Submit</button>
+          </div>    
+          
+        </div>
+       </form> 
+            <br><button type="submit" class="btn btn-default">Submit</button>      
       </div>
-              </form>      
-      </div>
-    </div>
+      
   </section>
 
 <!-- end of third section -->
