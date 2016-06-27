@@ -20,7 +20,7 @@ h1, h4, {
 }
 
 .navbar-default .navbar-brand {
-    color: #4CAF50;
+    color: #2ACC14;
     background-color: #000;
 }
 
@@ -30,7 +30,7 @@ h1, h4, {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #777;
+    color: #fff;
 }
 
 .social .fa-facebook:hover {
@@ -76,6 +76,6 @@ li {
     color: #2ACC14;
 }
 
-#check {
+#check, .fancy {
     color: #2ACC14;
 }
