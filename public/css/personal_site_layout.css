@@ -1,0 +1,77 @@
+body {
+	color: #d6cdcd;
+	font-weight: bold;
+    background-color: black;
+    font-family: Arial, serif;
+    font-size: 18px;
+}	
+
+p {
+	position: relative;
+}
+
+h1, h4, {
+	margin-right: 20px;
+    text-align: center;
+}
+
+.container-fluid {
+	background-color: #000;
+}
+
+.navbar-default .navbar-brand {
+    color: #4CAF50;
+    background-color: #000;
+}
+
+.navbar-default .navbar-nav>li>a {
+	columns: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+
+.social .fa-facebook:hover {
+    color: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    color: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    color: #e64522;
+}
+
+.social .fa-linkedin:hover {
+    color: #0094BC;
+}
+
+#footer-logo {
+	height: 20%;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.collapse-navbar-collapse {
+    background-color: #000;
+}
+
+#skills {
+    text-align: center;
+    font-size: 40px
+}
+
+#logo {
+    height: 130px;
+    width: 250px;
+}
+
+li {
+    color: #2ACC14;
+}
