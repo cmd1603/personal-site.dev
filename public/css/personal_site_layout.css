@@ -83,3 +83,22 @@ li {
     color: #2ACC14;
 }
 
+#list {
+    border-width: 16px;
+    border-color: #1b7b41;
+    border-style: groove; 
+}
+
+#simpsons, #calculator {
+    border-width: 16px;
+    border-color: #1b7b41;
+    border-style: groove;
+}
+
+#map {
+    border-width: 16px;
+    border-color: #1b7b41;
+    border-style: groove;
+    height: 325px;
+}
+
