@@ -17,6 +17,9 @@ h1, h4, {
 
 .container-fluid {
 	background-color: #000;
+    position: relative;
+    max-width: none;
+    height: 100%;
 }
 
 .navbar-default .navbar-brand {
@@ -79,3 +82,4 @@ li {
 #check, .fancy {
     color: #2ACC14;
 }
+
