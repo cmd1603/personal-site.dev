@@ -1,5 +1,5 @@
 body {
-	color: #d6cdcd;
+	color: #d6f2ff;
 	font-weight: bold;
     background-color: black;
     font-family: Arial, serif;
@@ -76,29 +76,38 @@ h1, h4, {
 }
 
 li {
-    color: #2ACC14;
+    color: #3581b1;
 }
 
 #check, .fancy {
-    color: #2ACC14;
+    color: #3581b1;
 }
 
 #list {
     border-width: 16px;
-    border-color: #1b7b41;
+    border-color: #d6f2ff;
     border-style: groove; 
 }
 
 #simpsons, #calculator {
     border-width: 16px;
-    border-color: #1b7b41;
+    border-color: #d6f2ff;
     border-style: groove;
 }
 
 #map {
     border-width: 16px;
-    border-color: #1b7b41;
+    border-color: #d6f2ff;
     border-style: groove;
     height: 325px;
 }
 
+#education {
+    border-width: 10px;
+    border-color: #d6f2ff;
+
+}
+
+.fa-graduation-cap {
+        font-size: -webkit-xxx-large;
+}
