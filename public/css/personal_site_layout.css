@@ -28,12 +28,12 @@ h1, h4, {
 }
 
 .navbar-default .navbar-nav>li>a {
-	columns: #fff;
+    background-color: black;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #fff;
+    color: white;
 }
 
 .social .fa-facebook:hover {
@@ -108,6 +108,21 @@ li {
 
 }
 
-.fa-graduation-cap {
-        font-size: -webkit-xxx-large;
+#knowledge {
+    position: relative;
+    border-width: 0;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
 }
