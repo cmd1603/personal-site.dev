@@ -114,7 +114,7 @@ li {
 }
 
 .img-responsive {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     display: block;
 }
