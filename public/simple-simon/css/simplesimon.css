@@ -1,0 +1,114 @@
+
+h3 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 79px;
+    font-weight: bolder;
+    color: rgb(251, 255, 0);
+    text-shadow: 6px 8px 5px #000000;
+}
+
+#start {
+	margin-left: 115px;
+    margin-top: 17px;
+    width: 107px;
+    font-size: x-large;
+}
+
+#round {
+    margin-left: -1px;
+    margin-top: 11px;
+    width: 130px;
+    font-size: x-large;
+}
+
+#stop {
+	margin-left: 0;
+	margin-top: 0;
+	width: 107px;
+    font-size: x-large;
+}
+
+#box1 {
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	background-color: black;
+	/*left: 106px;
+	top: 173px;*/
+	left: 0;
+	top: 0;
+	opacity: .3;
+}
+#box2 {
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	background-color: black;
+	right: 0;
+	top: 0;
+	opacity: .3;
+}
+#box3 {
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	background-color: black;
+	left: 0;
+	bottom: 0;
+	opacity: .3;
+}
+#box4 {
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	background-color: black;
+	right: 0;
+	bottom: 0;
+	opacity: .3;
+}
+
+p {
+	margin-left: 259px;
+	width: 107px;
+    font-size: x-large;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+
+.stretch {
+    width: 100%;
+   	height: 100%;
+}
+
+#container {
+	height: 355px;
+	width: 355px;
+	position: relative;
+	margin-left: 112px;
+	margin-top: 23px;
+}
+
+.text-right {
+	height: 54px;
+    width: 0;
+    position: relative;
+    margin-right: 0;
+    left: 258px;
+    top: -275px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 44px;
+    color: rgb(251, 255, 0);
+    text-shadow: 6px 8px 5px #000000;
+}
