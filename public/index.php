@@ -1,92 +1,35 @@
+<?php
+
+function pageController() {
+    $data = [];
+
+    //page title
+    $data["title"] = "Chris - Web Developer";
+
+    //to toggle active class on navbar
+    $data["work"] = "";
+    $data["about"] = "";
+    $data["resume"] = "";
+    $data["contact"] = "";
+
+    return $data;
+}
+
+extract(pageController());
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Chris Davila</title>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="css/personal_site_layout.css">
-  <style type="text/css">
-    .parallax-container {
-      height: 500px;
-      width: 100%;
-    }
-  </style>
+    <?php require_once "header.php" ?>
 </head>
 <body>
+    <?php require_once "navbar.php" ?>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Chris Davila</a>
-    </div>
-
-
-    <!-- Profile Picture -->
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Portfolio</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a> 
-          
-          <ul class="dropdown-menu">
-            <li><a href="http://simplesimon.dev/simplesimon.html">Simple Simpsons</a></li>
-            <li><a href="http://codeup.dev/calculator.html">Javascript Calculator</a></li>
-            <li><a href="http://codeup.dev/weather_map.html">Weather Map</a></li>
-            <li role="separator" class="divider"></li>       
-          </ul>
-          <li><a href="mailto:cmd1603@gmail.com">Email Me</a></li>
-        </li>
-      </ul>
-
-
-       <!-- social media icons -->
-      <ul class="nav navbar-nav navbar-right social">
-          <li><a href="https://www.github.com/cmd1603" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
-          <li><a href="https://www.facebook.com/chris.davila86" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/mr_chrisD" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-lg fa-google-plus" target="_blank"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/chris-davila-6462a960?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
-      </ul>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
 <!-- /.begin-parallex scrolling -->
 
-<!-- first section -->
-<section>
-<div class='text-center'><img src="img/logo.png" id="logo"><span style="font-family: Cursive; font-size: x-large">Software Developer</span></div>
-
-  <div class='container' id='intro'>  
-      
-      <h1 style="text-align: center">Introduction</h1>
-    <hr>
-      <div class='row'>
-          <p class="col-md-5">Hello and welcome to my site! Who am I? I'm Chris Davila. I'm an aspiring software developer who recently left the media sales industry to chase a dream. It was a tough decision to make but saying "What if?" is not something I ever plan to say when I'm an old man. </p>
-        
-          <img class='col-md-2 center-block img-responsive img-circle' alt="Responsive image" src="img/pic2.jpg" alt="Profile-Pic">
-        
-
-          <div class='col-md-5'>I have MANY passions. I've been a journalist, a multimedia news reporter, and as I mentioned before, a TV advertising salesman. My biggest passions are sports and anything and everything muscle cars! So why be a developer? Because I plan to join my passions in a way I never imagined as a kid. <br>Stand by for AWESOMENESS! 
-          </div>
-
-      </div>
-    </div>
-<br>       
-</section>
 
 <!-- end first section -->
     <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/code2.jpg" data-natural-width="1400" data-natural-height="900"></div>
@@ -231,25 +174,16 @@
             
         </section>
 
+
+    <?php require_once "footer.html" ?>
+
 <!-- end of third section -->
 
-        <footer>
-            <div class="row text-center">
-              <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <a href="https://www.linkedin.com/in/chris-davila-6462a960?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                    <a href="https://www.facebook.com/chris.davila86" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="https://twitter.com/mr_chrisD" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                    <p id="top"><a class="scroll" href="#">To The Top</a></p>
-                </div>
-              <div class="col-md-4"></div>              
-            </div>
-        </footer>
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/personal_site.js"</script>
-  <script src="https://use.fontawesome.com/d2f688b35c.js"></script> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/d2f688b35c.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/parallax.js-1.4.2/parallax.min.js"></script>
   
