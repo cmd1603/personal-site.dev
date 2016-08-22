@@ -5,32 +5,7 @@
 	    <meta charset="utf-8">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-
-	<style>
-		body {
-			background-image: url('img/weather.jpg')
-		}
-		h1, h3 {
-			text-align: center;
-		}
-		.col-md-4 {
-			border: 2px solid black;
-			height: 300px;
-			width: 275px;
-			/*float: left;*/
-			text-align: center;
-			margin-left: 100px;
-}
-
-		#map {
-			height: 300px;
-    		width: 50%;
-    		margin-top: 100px;
-    		margin-left: 300px;
-		}		
-
-	</style>	
-
+	<link href="/css/weather.css" type="text/css" rel="stylesheet">
 </head>
 
 
@@ -38,20 +13,17 @@
 <body style='background-color: papayawhip;'>
 
 <h1>Weather Map Application</h1>
-<h3 id='city'></h3>
+
 
 <div class="container">
-
-  <div class="row">
-
-    <div class="col-md-4" id="day0"></div>
-
-    <div class="col-md-4" id="day1"></div>
-
-    <div class="col-md-4" id="day2"></div>
-
-  </div>
-
+	<h3 id='weather'></h3>
+		<h2 class="text-center">Weather for<span id="cityname" class="location"></span></h2>
+		<div id="customData" class="text-center">
+			<label for="location">Location:</label><input type="text" id="location" name="location" placeholder="San Antonio, TX">
+			<button type="submit" id="submitLocation">Check Weather</button>
+		</div>
+		<div class="row"></div>
+		<div id="map"></div>
 </div>
 
 
@@ -59,105 +31,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZaQCnIGqQyKxO-gCzjrYP13FgXWdAl38"></script>
 	<script src="http://momentjs.com/downloads/moment.min.js"></script>
+	<script src="/js/weather.js"></script>
 
-<hr style="margin-top: 5rem; border-width: 3px; background-color: aliceblue;">
-	<div id='map'></div>
-	
- <button id='update'>Update Map</button> 
-
-<!------ Beginning of Jquery/JS ------>
-
-$(document.ready(function) {
-
-    <script type="text/javascript">
-    (function() {
-        "use strict";
-
-        var geocoder = new google.maps.Geocoder();
-		var cityName = $("#cityname");
-		var mapHolder = $(".map");
-		var enterLocation = $("#enterLocation");
-		var currentLocation = "San Antonio, TX";
-
-        var mapOptions = {
-            zoom: 5,
-            center: {lat: 29.4267904, lng: -98.4917651}
-        }
-		console.log(mapOptions);
-        // Render the map
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        var marker = new google.maps.Marker({
-    		position: mapOptions.center,
-    		map: map,
-    		draggable: true
-		});
-
-    
-		function geocodeAddress() {
-			geocoder.geocode({"address":city }, function(results, status) {
-				if (status == google.maps.GeocoderStatus.OK) {
-					map.SetCenter(results[0].geometry.location);
-				} else {
-					alert("Geocoding not successful - STATUS: " + status);
-				}
-
-				marker.setPosition(results[0].geometry.location);
-				google.maps.event.addListener(marker, "dragend", function(event) {
-					updateForecast(event.latLng);
-				})
-				loadWeather(results[0].geometry.location);
-			})
-		}
-
-
-	function loadWeather (latLng) {
-		var info = {
-			APPID: "0fd75c2b05556c4a57af0d4b517196ec",
-			lat: latitude,
-			lon: longitude,
-			units: 'imperial',
-			cnt: 3
-		};
-
-		$.get("http://api.openweathermap.org/data/2.5/forecast/daily", info).done(function (weather) {
-			cityName.html(" " + weather.city.name);
-			fillDayBox(weather);
-		})
-	}
-
-
-			}).done(function(data) {
-			$('#city').html(data.city.name); 		
-			//console.log(data);
-			data.list.forEach(function(weather, i){ console.log(weather)
-			var description = weather.weather[0].description;
-			var highTemp = weather.temp.max.toFixed(0);
-			var lowTemp = weather.temp.min.toFixed(0);
-			var humidity = weather.humidity;
-			var wind = weather.speed;
-			var date = weather.dt;
-			var weatherIcon = weather.weather[0].icon;
-
-			var dateString = moment.unix(date).format("MMM Do YY");
-
-	        $('#day' + i).html('<div class=\"day\"><p>' + dateString + 
-	         '<p><img src=\"http://openweathermap.org/img/w/' + weatherIcon + ".png\" alt=\"weather icon\">" +
-	         '<p><b>High & Low:</b> ' + highTemp + '/' + lowTemp + '</p>' +
-	         '<p><b>Outside:</b> '+ description + '</p>' +
-	         '<p><b>Humidity: </b>' + humidity + 
-	         '<p><b>Wind: </b>' + wind + '</p></div>')
-			})
-
-	  	});
-	}
-
-	loadWeather(mapOptions.center.lat, mapOptions.center.lng);
-	$('#update').click(loadWeather); 
-
-})();\
-
-});
-</script>
 
 </body>
 </html>
