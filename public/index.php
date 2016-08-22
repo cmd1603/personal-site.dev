@@ -7,7 +7,7 @@ function pageController() {
     $data["title"] = "Chris - Web Developer";
 
     //to toggle active class on navbar
-    $data["work"] = "";
+    $data["projects"] = "";
     $data["about"] = "";
     $data["resume"] = "";
     $data["contact"] = "";

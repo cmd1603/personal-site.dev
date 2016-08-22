@@ -7,7 +7,7 @@ function pageController() {
     $data["title"] = "About";
 
     //to toggle active class on navbar
-    $data["work"] = "";
+    $data["projects"] = "";
     $data["about"] = "active";
     $data["resume"] = "";
     $data["contact"] = "";
@@ -53,8 +53,12 @@ extract(pageController());
     <?php require_once "footer.html" ?>
 
     <!--- JS --->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/personal_site.js"</script>
+    <script src="https://use.fontawesome.com/d2f688b35c.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/parallax.js-1.4.2/parallax.min.js"></script>
 
 </body>
 </html>

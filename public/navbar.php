@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Chris Davila</a>
+            <a class="navbar-brand" href="/index.php" alt="Home">Chris Davila</a>
         </div>
 
 
@@ -17,7 +17,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Portfolio</a></li>
+                <li class="<?=$about?>""><a href="/about.php">about</a></li>
+                <li class="<?=$projects?>""><a href="/projects.php">projects</a></li>
+                <li class="<?=$resume?>""><a href="/resume.php">resume</a></li>
+                <li class="<?=$contact?>""><a href="/contact.php">contact</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
 

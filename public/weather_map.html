@@ -65,15 +65,23 @@
 	
  <button id='update'>Update Map</button> 
 
+<!------ Beginning of Jquery/JS ------>
+
+$(document.ready(function) {
+
     <script type="text/javascript">
     (function() {
         "use strict";
 
         var geocoder = new google.maps.Geocoder();
-        //var myLatlng = new google.maps.LatLng(,);
+		var cityName = $("#cityname");
+		var mapHolder = $(".map");
+		var enterLocation = $("#enterLocation");
+		var currentLocation = "San Antonio, TX";
+
         var mapOptions = {
             zoom: 5,
-            center: {lat: 29.423017, lng: -98.48527}
+            center: {lat: 29.4267904, lng: -98.4917651}
         }
 		console.log(mapOptions);
         // Render the map
@@ -85,24 +93,37 @@
 		});
 
     
-		marker.addListener('dragend', function(event) {
-			var latInput = event.latLng.lat();
-			var lonInput = event.latLng.lng();
-			console.log('listening')
-			//updateForecast(event.latlng);
-			loadWeather(latInput, lonInput);
-		});
+		function geocodeAddress() {
+			geocoder.geocode({"address":city }, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					map.SetCenter(results[0].geometry.location);
+				} else {
+					alert("Geocoding not successful - STATUS: " + status);
+				}
+
+				marker.setPosition(results[0].geometry.location);
+				google.maps.event.addListener(marker, "dragend", function(event) {
+					updateForecast(event.latLng);
+				})
+				loadWeather(results[0].geometry.location);
+			})
+		}
 
 
-	function loadWeather (latitude, longitude) {
-		$.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
-		    APPID: "0fd75c2b05556c4a57af0d4b517196ec",
-		    lat: latitude,
-		    lon: longitude,
-		    units: 'imperial',
-		    cnt: 3,
-		    // lat: marker.position.lat(),
-		    // lng: marker.position.lng()
+	function loadWeather (latLng) {
+		var info = {
+			APPID: "0fd75c2b05556c4a57af0d4b517196ec",
+			lat: latitude,
+			lon: longitude,
+			units: 'imperial',
+			cnt: 3
+		};
+
+		$.get("http://api.openweathermap.org/data/2.5/forecast/daily", info).done(function (weather) {
+			cityName.html(" " + weather.city.name);
+			fillDayBox(weather);
+		})
+	}
 
 
 			}).done(function(data) {
@@ -133,8 +154,9 @@
 	loadWeather(mapOptions.center.lat, mapOptions.center.lng);
 	$('#update').click(loadWeather); 
 
-})();
+})();\
 
+});
 </script>
 
 </body>
