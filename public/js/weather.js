@@ -1,12 +1,12 @@
-$($(document).ready(function() {
+$(document).ready(function() {
 
     "use strict";
 
-    var geocoder = new google.maps.Geocoder();
     var cityName = $("#cityname");
-    var mapHolder = $(".map");
-    var enterLocation = $("#enterLocation");
-    var currentLocation = "San Antonio, TX";
+    var mapHolder = $(".row");
+    var submitLocation = $("#submitLocation");
+    var city = "San Antonio, TX";
+    var geocoder = new google.maps.Geocoder();
 
     var mapOptions = {
         zoom: 5,
@@ -25,7 +25,7 @@ $($(document).ready(function() {
     function geocodeAddress() {
         geocoder.geocode({"address": city}, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
-                map.SetCenter(results[0].geometry.location);
+                map.setCenter(results[0].geometry.location);
             } else {
                 alert("Geocoding not successful - STATUS: " + status);
             }
@@ -33,7 +33,7 @@ $($(document).ready(function() {
             marker.setPosition(results[0].geometry.location);
 
             google.maps.event.addListener(marker, "dragend", function (event) {
-                updateForecast(event.latLng);
+                loadWeather(event.latLng);
             })
             loadWeather(results[0].geometry.location);
         })
@@ -64,8 +64,8 @@ $($(document).ready(function() {
             var highTemp = day.temp.max.toFixed(0);
             var lowTemp = day.temp.min.toFixed(0);
             var humidity = day.humidity;
+            var main = day.weather[0].main;
             var wind = day.speed.toFixed(0);
-            var date = weather.dt;
             var icon = day.weather[0].icon;
             var timestamp;
 
@@ -83,7 +83,7 @@ $($(document).ready(function() {
         })
     }
 
-    enterLocation.on("click", function () {
+    submitLocation.on("click", function () {
         city = $("#location").val();
         geocodeAddress();
         map.setZoom(9);
@@ -91,5 +91,5 @@ $($(document).ready(function() {
 
     geocodeAddress();
 
-}));
+});
 

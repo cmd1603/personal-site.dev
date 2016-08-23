@@ -10,20 +10,17 @@
 
 
 
-<body style='background-color: papayawhip;'>
-
-<h1>Weather Map Application</h1>
-
+<body>
 
 <div class="container">
-	<h3 id='weather'></h3>
-		<h2 class="text-center">Weather for<span id="cityname" class="location"></span></h2>
-		<div id="customData" class="text-center">
-			<label for="location">Location:</label><input type="text" id="location" name="location" placeholder="San Antonio, TX">
-			<button type="submit" id="submitLocation">Check Weather</button>
-		</div>
-		<div class="row"></div>
-		<div id="map"></div>
+		<h3 class="col-md-12 text-center" id='weather'></h3>
+			<h2 class="text-center" id="headers">Weather for<span id="cityname" class="location" style="color: orange"></span></h2>
+			<div id="customData" class="text-center">
+				<label for="location" id="headers">Location:</label><input style="margin: 3px" type="text" id="location" name="location" placeholder="San Antonio, TX">
+				<button type="submit" id="submitLocation">Get Forecast</button>
+			</div>
+			<div class="row"></div>
+			<div id="map"></div>
 </div>
 
 
