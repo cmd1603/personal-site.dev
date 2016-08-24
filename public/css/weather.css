@@ -13,9 +13,12 @@ body {
 
 #map {
     height: 290px;
+    display: block;
+    float: none;
+    clear: both;
 }
 
-.col-md-4 {
+#boxes {
     text-align: center;
     border: 2px dotted black;
     color: aliceblue;
@@ -25,4 +28,10 @@ body {
 
 #headers {
     color: aliceblue;
+}
+
+#forecast {
+    display: block;
+    float: none;
+    clear: both;
 }

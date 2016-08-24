@@ -1,5 +1,5 @@
-
 <?php
+
 function pageController() {
 	$data = [];
 	// page title
@@ -12,7 +12,9 @@ function pageController() {
 
 	return $data;
 }
+
 extract(pageController());
+
 ?>
 
 <!DOCTYPE html>
@@ -25,21 +27,20 @@ extract(pageController());
 <body>
 	<?php require_once "../navbar.php" ?>
 <div class="container">
-		<h3 class="col-md-12 text-center" id='weather'></h3>
+			<h3 class="col-md-12 text-center" id='weather'></h3>
 			<h2 class="text-center" id="headers">Weather for<span id="cityname" class="location" style="color: orange"></span></h2>
 			<div id="customData" class="text-center">
 				<label for="location" id="headers">Location:</label><input style="margin: 3px" type="text" id="location" name="location" placeholder="San Antonio, TX">
 				<button type="submit" id="submitLocation">Get Forecast</button>
 			</div>
-			<div class="row"></div>
+			<div id="forecast"></div>
 			<div id="map"></div>
 </div>
 
 	<?php require_once "../footer.html" ?>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpqCtja5_cTG5h4K-gJeAhvb5BC1CiXs"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZaQCnIGqQyKxO-gCzjrYP13FgXWdAl38"></script>
 	<script src="http://momentjs.com/downloads/moment.min.js"></script>
 	<script src="/js/weather.js"></script>
 </body>

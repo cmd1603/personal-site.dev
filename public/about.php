@@ -30,8 +30,10 @@ extract(pageController());
     <!--- Header and Photo --->
     <!-- first section -->
     <section>
-        <div class='text-center'><img src="img/logo.png" id="logo"><span style="font-family: Cursive; font-size: x-large">Software Developer</span></div>
-
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3"><img src="img/logo.png" id="logo"></div>
+            <div class="col-md-3 col-md-1" style="font-family: Cursive; font-size: x-large">Software Developer</div>
+        </div>
         <div class='container' id='intro'>
 
             <h1 style="text-align: center">Introduction</h1>

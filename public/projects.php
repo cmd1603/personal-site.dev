@@ -1,4 +1,5 @@
 <?php
+
 function pageController() {
     $data = [];
 
@@ -25,20 +26,20 @@ extract(pageController());
     <?php require_once "navbar.php" ?>
 
 <h1 class="text-center">Projects/Applications</h1>
-
-<div>
-    <div>
-        <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-            <img class="img-responsive" alt="JavaScript calculator" src="#">
+<br>
+<div class="row">
+    <div class="appholder">
+        <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
+            <img class="img-responsive" alt="JavaScript calculator" src="/img/calcapp.png">
         </div>
         <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-            <p class="lead">Behold, an entirely JavaScript calculator! Custom CSS and JavaScript make this simple beauty a handy tool around the office.<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
+            <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
             <hr>
             <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
         </div>
     </div>
 </div>
-
+<br>
 <div class="container">
     <div>
         <div class="row">
@@ -48,7 +49,7 @@ extract(pageController());
                 <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
             </div>
             <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
-                <img class="img-responsive" alt="Weather Map" src="#">
+                <img class="img-responsive" alt="Weather Map" src="/img/weatherapp.png">
             </div>
         </div>
     </div>
@@ -68,12 +69,9 @@ extract(pageController());
     <?php require_once "footer.html" ?>
 
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/personal_site.js"</script>
-<script src="https://use.fontawesome.com/d2f688b35c.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://momentjs.com/downloads/moment.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="js/parallax.js-1.4.2/parallax.min.js"></script>
 
 
 </body>

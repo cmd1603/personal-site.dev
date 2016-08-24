@@ -3,7 +3,7 @@ $(document).ready(function() {
     "use strict";
 
     var cityName = $("#cityname");
-    var mapHolder = $(".row");
+    var mapHolder = $("#forecast");
     var submitLocation = $("#submitLocation");
     var city = "San Antonio, TX";
     var geocoder = new google.maps.Geocoder();
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
             google.maps.event.addListener(marker, "dragend", function (event) {
                 loadWeather(event.latLng);
-            })
+            });
             loadWeather(results[0].geometry.location);
         })
     }
@@ -57,6 +57,7 @@ $(document).ready(function() {
 
 
     function weatherBoxForecast(weather) {
+        console.log(mapHolder.length);
         mapHolder.html("");
         var daysArray = weather.list;
         daysArray.forEach(function (day, i) {
@@ -78,7 +79,7 @@ $(document).ready(function() {
             }
 
 
-            var data = "<div class=\"dayDiv col-md-4\">" + timestamp + "<h3>" + highTemp + "&deg;/" + lowTemp + "&deg;</h3>" + "<p><img alt=\"weather icon\" src=\"http://openweathermap.org/img/w/" + icon + ".png\"></p><p><span class=\"heading\">" + main + ":</span> " + description + "</p><p><span class=\"heading\">Humidity:</span> " + humidity + "&#37;</p><p><span class=\"heading\">Wind:</span> " + wind + " mph</p></div>";
+            var data = "<div class=\"dayDiv col-md-4\" id=\"boxes\">" + timestamp + "<h3>" + highTemp + "&deg;/" + lowTemp + "&deg;</h3>" + "<p><img alt=\"weather icon\" src=\"http://openweathermap.org/img/w/" + icon + ".png\"></p><p><span class=\"heading\">" + main + ":</span> " + description + "</p><p><span class=\"heading\">Humidity:</span> " + humidity + "&#37;</p><p><span class=\"heading\">Wind:</span> " + wind + " mph</p></div>";
             mapHolder.append(data);
         })
     }

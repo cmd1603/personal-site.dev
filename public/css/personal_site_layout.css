@@ -107,7 +107,7 @@ li {
 }
 
 .img-responsive {
-    max-width: 200px;
+    max-width: 350px;
     height: auto;
     display: block;
 }
@@ -118,4 +118,5 @@ li {
 
 .img-circle {
     border-radius: 50%;
+    max-width: 200px;
 }
