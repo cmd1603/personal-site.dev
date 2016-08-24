@@ -1,14 +1,32 @@
+
+<?php
+function pageController() {
+	$data = [];
+	// page title
+	$data["title"] = "Simple Simpsons";
+	// to toggle active class on navbar
+	$data["projects"] = "active";
+	$data["about"] = "";
+	$data["resume"] = "";
+	$data["contact"] = "";
+
+	return $data;
+}
+extract(pageController());
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>I am Simon</title>
-	<meta charset="utf-8">
+	<?php require_once "../header.php" ?>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/simplesimon.css">
 	
 
 </head>
 <body>
+	<?php require_once "../navbar.php" ?>
 	<div id="background">
 		<img class="stretch" src="img/simpsonsbackground.jpg">
 	</div>
@@ -60,8 +78,9 @@
     	<source src="http://www.richmolnar.com/Sounds/Barney%20-%20Burp.wav">
 	</audio>
 
+	<?php require_once "../footer.html" ?>
 
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>	
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src='js/simplesimon.js'></script>
 </body>

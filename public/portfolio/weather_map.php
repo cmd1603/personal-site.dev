@@ -1,17 +1,29 @@
+
+<?php
+function pageController() {
+	$data = [];
+	// page title
+	$data["title"] = "Weather Map";
+	// to toggle active class on navbar
+	$data["projects"] = "active";
+	$data["about"] = "";
+	$data["resume"] = "";
+	$data["contact"] = "";
+
+	return $data;
+}
+extract(pageController());
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Weather Map</title>
-	    <meta charset="utf-8">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<?php require_once "../header.php" ?>
 	<link href="/css/weather.css" type="text/css" rel="stylesheet">
 </head>
 
-
-
 <body>
-
+	<?php require_once "../navbar.php" ?>
 <div class="container">
 		<h3 class="col-md-12 text-center" id='weather'></h3>
 			<h2 class="text-center" id="headers">Weather for<span id="cityname" class="location" style="color: orange"></span></h2>
@@ -23,13 +35,12 @@
 			<div id="map"></div>
 </div>
 
+	<?php require_once "../footer.html" ?>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZaQCnIGqQyKxO-gCzjrYP13FgXWdAl38"></script>
 	<script src="http://momentjs.com/downloads/moment.min.js"></script>
 	<script src="/js/weather.js"></script>
-
-
 </body>
 </html>

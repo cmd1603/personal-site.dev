@@ -10,16 +10,9 @@ p {
 	position: relative;
 }
 
-h1, h4, {
+h1, h4{
 	margin-right: 20px;
     text-align: center;
-}
-
-.container-fluid {
-	background-color: #000;
-    position: relative;
-    max-width: none;
-    height: 100%;
 }
 
 .navbar-default .navbar-brand {
@@ -27,7 +20,7 @@ h1, h4, {
     background-color: #000;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default {
     background-color: black;
 }
 

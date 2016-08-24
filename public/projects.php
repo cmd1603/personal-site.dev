@@ -9,21 +9,22 @@ function pageController() {
     $data["about"] = "";
     $data["resume"] = "";
     $data["contact"] = "";
+
     return $data;
 }
 extract(pageController());
-?>
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php require_once "header.php" ?>
 </head>
-<body class="footer-divide">
-<?php require_once "navbar.php" ?>
+<body>
+    <?php require_once "navbar.php" ?>
 
-<h1 class="pageHeadGray text-center">Projects/Applications</h1>
+<h1 class="text-center">Projects/Applications</h1>
 
 <div>
     <div>
@@ -31,7 +32,7 @@ extract(pageController());
             <img class="img-responsive" alt="JavaScript calculator" src="#">
         </div>
         <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-            <p class="lead">Behold, an entirely JavaScript calculator! Custom CSS and JavaScript make this simple beauty a handy tool around the office.<a class="seeProjectLink" href="/portfolio/js_calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
+            <p class="lead">Behold, an entirely JavaScript calculator! Custom CSS and JavaScript make this simple beauty a handy tool around the office.<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
             <hr>
             <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
         </div>
@@ -56,7 +57,7 @@ extract(pageController());
 <div>
     <div>
         <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-            <img class="img-responsive" alt="JavaScript calculator" src="#">
+            <img class="img-responsive" alt="Adlister" src="#">
         </div>
         <div class="col-sm-7 col-md-7 col-lg-7">
             <p>JavaScript // jQuery // HTML // CSS</p>
@@ -64,7 +65,7 @@ extract(pageController());
     </div>
 </div>
 
-<?php require_once "footer.html" ?>
+    <?php require_once "footer.html" ?>
 
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>

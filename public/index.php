@@ -94,30 +94,6 @@ extract(pageController());
 
 <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/texas_flag.jpg" data-natural-width="1279" data-natural-height="853"></div>
 
-       <section> 
-          <div class="container text-center">
-            <div class='row'>
-              <h1>My Projects</h1>
-              <h4>Feel Free to Check em' Out</h4>
-          <hr>
-                <div class="col-md-4" id='simpsons' style='font-size: 24px; background-color: white;'>
-                    <ul>
-                    <a class="fancy" href="/simple-simon/simplesimon.html" target="_blank">Simple Simpsons<br><span style='font-size: 20px;'>Built w/ HTML5, CSS6, JavaScript & JQuery.
-                    </ul><img src="img/screen_shot.png" style='height: 50%; width: 53%' alt="Simple Simon"></a>
-                </div>
-                <div class="col-md-4" id='calculator' style='font-size: 24px; background-color: white'>
-                    <ul>
-                    <a class="fancy" href="http://codeup.dev/calculator.html" target="_blank">JavaScript Calculator<br><span style='font-size: 20px'>Built with HTML5, CSS6 & JavaScript.
-                    </ul><img src="img/js_calc.png" style='height: 100%; width: 74%' alt="Calculator"></a>
-                </div>
-                <div class="col-md-4" id='map' style='font-size: 24px; background-color: white'>
-                    <ul>
-                    <a class="fancy" href="weather_map.html" target="_blank">Weather Map<br><span style='font-size: 20px'>Built with HTML5, CSS6, JavaScript & JQuery.
-                    </ul><img src="img/weathermap2.png" style='height: 61%; width: 100%' alt="Weather Map"></a>
-                </div>
-            </div>
-          </div>
-       </section> 
 
         <br>
 <!--     <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="img/view.jpg" data-natural-width="1400" data-natural-height="900" style="height: 501px;"></div> -->
@@ -186,7 +162,6 @@ extract(pageController());
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/parallax.js-1.4.2/parallax.min.js"></script>
-  
 </body>
 </html>
 

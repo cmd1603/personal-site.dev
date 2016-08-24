@@ -1,0 +1,64 @@
+    body {
+        background-image: url(/img/graph-paper2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444444;
+      border:2px solid black;
+      background-color: antiquewhite;
+      opacity: .87;
+    }
+
+    .forms {
+    background-color: rgb(255, 255, 255);
+    height: 4em;
+    width: 23%;
+    border: 0;
+    text-align: center;
+    padding: 0;
+    border: 5px solid black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 4%;
+    font-size: 14px;
+    }
+
+    .buttons {
+    color: whitesmoke;
+    background-color: #444444;
+    height: 3em;
+    width: 15%;
+    padding: 0;
+    border: 2px solid black;
+    font-size: 18px;
+    }
+
+    .operator {
+        color: whitesmoke;
+        background-color: darkorange;
+    }
+
+    #clear {
+        color: whitesmoke;
+        background-color: red;
+    }
+
+    #equals {
+        color: whitesmoke;
+        background-color: #32e432;
+    }
+
+    #bs_div {
+        border:2px solid black;
+        background-color: antiquewhite;
+        opacity: .87;
+    }
+
+    .bottom-row {
+        margin-bottom: 1%;
+    }
