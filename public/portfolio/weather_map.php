@@ -24,7 +24,7 @@ extract(pageController());
 	<link href="/css/weather.css" type="text/css" rel="stylesheet">
 </head>
 
-<body>
+<body style="padding-top: 75px;">
 	<?php require_once "../navbar.php" ?>
 <div class="container">
 			<h3 class="col-md-12 text-center" id='weather'></h3>

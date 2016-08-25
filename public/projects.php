@@ -32,7 +32,7 @@ extract(pageController());
         <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
             <img class="img-responsive" alt="JavaScript calculator" src="/img/calcapp.png">
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
             <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
             <hr>
             <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>

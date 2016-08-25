@@ -31,8 +31,8 @@ extract(pageController());
     <!-- first section -->
     <section>
         <div class="row">
-            <div class="col-md-3 col-md-offset-3"><img src="img/logo.png" id="logo"></div>
-            <div class="col-md-3 col-md-1" style="font-family: Cursive; font-size: x-large">Software Developer</div>
+            <div class="col-md-3 col-md-offset-3 text-center"><img src="img/logo.png" id="logo"></div>
+            <div class="col-md-3 col-md-3 text-center" style="font-family: Cursive; font-size: x-large; padding-top: 4%">Software Developer</div>
         </div>
         <div class='container' id='intro'>
 
