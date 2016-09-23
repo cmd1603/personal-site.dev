@@ -27,10 +27,11 @@ extract(pageController());
 
 <h1 class="text-center">Projects/Applications</h1>
 <br>
-<div class="row">
-    <div class="appholder">
+
+<div class="row calculator_section">
+    <div class="appHolder">
         <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
-            <img class="img-responsive" alt="JavaScript calculator" src="/img/calcapp.png">
+            <img class="img-responsive right" alt="JavaScript calculator" src="/img/calcapp.png">
         </div>
         <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
             <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
@@ -39,7 +40,9 @@ extract(pageController());
         </div>
     </div>
 </div>
+
 <br>
+
 <div class="container">
     <div>
         <div class="row">
@@ -55,13 +58,16 @@ extract(pageController());
     </div>
 </div>
 
-<div>
-    <div>
+<br>
+
+<div class="simpsonsBackground">
+    <div class="appHolder">
         <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
             <img class="img-responsive" alt="Adlister" src="#">
         </div>
         <div class="col-sm-7 col-md-7 col-lg-7">
-            <p>JavaScript // jQuery // HTML // CSS</p>
+            <p class="lead">A simple simon game with a theme from "The Simpsons"</p>
+            <p class="languages">JavaScript // jQuery // HTML // CSS</p>
         </div>
     </div>
 </div>

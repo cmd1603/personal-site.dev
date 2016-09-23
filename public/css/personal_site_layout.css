@@ -1,13 +1,107 @@
+html,body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
 	color: #d6f2ff;
 	font-weight: bold;
     background-color: black;
     font-family: Arial, serif;
     font-size: 18px;
-}	
+}
 
-p {
-	position: relative;
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    /*text-shadow: 1px 1px 0 rgba(0,0,0,.75);*/
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 80vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 80vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1 {
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+    background-image: url(/img/code.jpg);
 }
 
 h1, h4{
@@ -24,12 +118,11 @@ h1, h4{
 }
 
 .navbar-default .navbar-brand {
-    color: #2ACC14;
-    background-color: #000;
+    color: #0bb711;
 }
 
 .navbar-default {
-    background-color: black;
+    background-color: #e6e6e6;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -115,7 +208,7 @@ li {
 }
 
 .img-responsive {
-    max-width: 350px;
+    max-width: 450px;
     height: auto;
     display: block;
 }
@@ -140,10 +233,10 @@ body {
 }
 
 footer {
-    background-color: #f8f8f8;
+    background-color: #e6e6e6;
     border-top: 1px solid white;
     left: 0;
-    height:100px;
+    height: 100px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -151,7 +244,7 @@ footer {
 }
 
 #icons {
-    padding-top: 2px;
+    padding-top: 33px;
 }
 
 html {
@@ -159,3 +252,21 @@ html {
     min-height: 100%;
 }
 
+p.lead {
+    font-weight: 300;
+}
+
+p.languages {
+    text-transform: lowercase;
+    color: #a7a9ac;
+    margin-top: 0;
+}
+
+#simpsonsBackground {
+    width: 100%;
+    padding: 75px 100px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #777
+}
