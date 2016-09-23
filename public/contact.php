@@ -27,7 +27,7 @@ extract(pageController());
 <body>
     <?php require_once "navbar.php" ?>
 
-    <section>
+    <section style="padding-top: 5%; padding-bottom: 3%">
         <div class="container">
             <div class='row'>
                 <h1 class='text-center'>Contact</h1>

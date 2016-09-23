@@ -27,21 +27,17 @@ extract(pageController());
 <body>
     <?php require_once "navbar.php" ?>
 
-    <div class="carousel fade-carousel slide">
-        <div class="carousel-inner">
-            <div class="item slides active">
-                <div class="slide-1">
-                    <div class="overlay"></div>
-                </div>
-                <div class="hero">
-                    <hgroup>
-                        <h1 style="color: white">Hi!</h1>
-                        <h3>Welcome to my site!</h3>
-                    </hgroup>
-                </div>
-            </div>
-        </div>
+    <div class="slide-1">
+        <div class="overlay"></div>
     </div>
+    <div class="hero">
+        <hgroup>
+            <h1 style="color: white">Hi!</h1>
+            <h3>Welcome to my site!</h3>
+        </hgroup>
+    </div>
+
+
     <?php require_once "footer.html" ?>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

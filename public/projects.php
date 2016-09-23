@@ -25,52 +25,54 @@ extract(pageController());
 <body>
     <?php require_once "navbar.php" ?>
 
+<section style="padding-top: 5%">
 <h1 class="text-center">Projects/Applications</h1>
 <br>
 
-<div class="row calculator_section">
-    <div class="appHolder">
-        <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
-            <img class="img-responsive right" alt="JavaScript calculator" src="/img/calcapp.png">
-        </div>
-        <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
-            <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
-            <hr>
-            <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
-        </div>
-    </div>
-</div>
-
-<br>
-
-<div class="container">
-    <div>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <p class="lead">Using the Open Weather Map API and Google Maps API, I created this simple application to show the 3-day weather forecast and a close-up of a location from a user search.<a class="seeProjectLink" href="/portfolio/weather_map.php" alt="Weather Map">&nbsp;&nbsp;see project ></a></p>
+    <div class="row calculator_section">
+        <div class="appHolder">
+            <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
+                <img class="img-responsive right" alt="JavaScript calculator" src="/img/calcapp.png">
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
+                <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
                 <hr>
                 <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
             </div>
-            <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
-                <img class="img-responsive" alt="Weather Map" src="/img/weatherapp.png">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="lead">Using the Open Weather Map API and Google Maps API, I created this simple application to show the 3-day weather forecast and a close-up of a location from a user search.<a class="seeProjectLink" href="/portfolio/weather_map.php" alt="Weather Map">&nbsp;&nbsp;see project ></a></p>
+                    <hr>
+                    <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
+                    <img class="img-responsive" alt="Weather Map" src="/img/weatherapp.png">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<br>
+    <br>
 
-<div class="simpsonsBackground">
-    <div class="appHolder">
-        <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-            <img class="img-responsive" alt="Adlister" src="#">
-        </div>
-        <div class="col-sm-7 col-md-7 col-lg-7">
-            <p class="lead">A simple simon game with a theme from "The Simpsons"</p>
-            <p class="languages">JavaScript // jQuery // HTML // CSS</p>
+    <div class="simpsonsBackground">
+        <div class="appHolder">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+                <img class="img-responsive" alt="Adlister" src="#">
+            </div>
+            <div class="col-sm-7 col-md-7 col-lg-7">
+                <p class="lead">A simple simon game with a theme from "The Simpsons"</p>
+                <p class="languages">JavaScript // jQuery // HTML // CSS</p>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
     <?php require_once "footer.html" ?>
 

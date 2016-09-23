@@ -29,7 +29,7 @@ extract(pageController());
 
     <!--- Header and Photo --->
     <!-- first section -->
-    <section>
+    <section style="padding-top: 5%">
         <div class="row">
             <div class="col-md-3 col-md-offset-3 text-center"><img src="img/logo.png" id="logo"></div>
             <div class="col-md-3 col-md-3 text-center" style="font-family: Cursive; font-size: x-large; padding-top: 4%">Software Developer</div>

@@ -26,7 +26,6 @@
                 <li><a href="https://www.github.com/cmd1603" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
                 <li><a href="https://www.facebook.com/chris.davila86" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/mr_chrisD" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-lg fa-google-plus" target="_blank"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/chris-davila-6462a960?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
             </ul>
         </div>
