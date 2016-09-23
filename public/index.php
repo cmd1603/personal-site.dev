@@ -30,13 +30,16 @@ extract(pageController());
     <div class="slide-1">
         <div class="overlay"></div>
     </div>
-    <div class="hero">
-        <hgroup>
-            <h1 style="color: white">Hi!</h1>
-            <h3>Welcome to my site!</h3>
-        </hgroup>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 hero">
+                <hgroup>
+                    <h1 style="color: white">Hi!</h1>
+                    <h3>Welcome to my site!</h3>
+                </hgroup>
+            </div>
+        </div>
     </div>
-
 
     <?php require_once "footer.html" ?>
 
