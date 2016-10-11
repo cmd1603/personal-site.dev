@@ -7,7 +7,7 @@ html,body
 body {
 	font-weight: bold;
     background-color: ghostwhite;
-    font-family: Arial, serif;
+    font-family: 'Catamaran', sans-serif;
     font-size: 18px;
 }
 
@@ -172,4 +172,21 @@ p.languages {
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #777
+}
+
+span.skill_category {
+    font-weight: 500;
+    margin-right: 10px;
+    color: #a7a9ac;
+}
+
+div.container_resume {
+    margin: auto;
+    width: 60%;
+    padding: 0;
+}
+
+h4.company, .school {
+    font-weight: bold;
+    text-align: left;
 }

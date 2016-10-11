@@ -26,7 +26,7 @@ extract(pageController());
     <?php require_once "navbar.php" ?>
 
 <section style="padding-top: 5%">
-<h1 class="text-center">Projects/Applications</h1>
+<h1 class="text-center">Web Applications</h1>
 <br>
 
     <div class="full_width">
@@ -38,7 +38,7 @@ extract(pageController());
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1">
-                    <p class="lead"><span class="strong">fitwager</span> is a web app that is connected to the Fitbit API. Users are able to log in through their Fitbit account and wager against their friends in exercise challenges.<a class="seeProjectLink" href="https://fitwager.net" target="_blank" alt="fitwager">&nbsp;&nbsp;see project </a></p>
+                    <p class="lead"><span class="strong">fitwager</span> is a web app that is connected to the Fitbit API. Users are able to log in through their Fitbit account and wager against their friends in exercise challenges.<a class="seeProjectLink" href="https://fitwager.net" target="_blank" alt="fitwager">&nbsp;&nbsp;see project ></a></p>
                     <hr>
                     <p class="categories_small">php, laravel, html, css, bootstrap, javascript, jquery, fitbit api, o-auth</p>
                 </div>
@@ -77,7 +77,7 @@ extract(pageController());
             </div>
         </div>
     </div>
-    
+
     <hr>
 
     <div class="simpsonsBackground">
@@ -87,7 +87,9 @@ extract(pageController());
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1">
                 <p class="lead">A fictional site based on "Craiglist" where users can buy, sell, and trade Pokemon.</p>
-                <p class="languages">JavaScript // jQuery // HTML // CSS</p>
+                <p style="font-size: smaller;font-weight: 100;">I claim no rights to any Pokemon characters, images, or anything related to the show. The use of the Pokemon logo was only for fictional and educational purposes.</p>
+                <hr>
+                <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS</p>
             </div>
         </div>
     </div>

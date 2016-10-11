@@ -39,20 +39,19 @@ extract(pageController());
             <h1 style="text-align: center">Introduction</h1>
             <hr>
             <div class='row'>
-                <p class="col-md-5">Hello and welcome to my site! Who am I? I'm Chris Davila. I'm a software developer who recently left the media sales industry to chase a dream.
+                <p class="lead col-md-5">Hello and welcome to my site! Who am I? I'm Chris Davila. I'm a software developer who recently left the media sales industry to chase a dream.
                                     It was a tough decision to make but saying "What if?" is not something I ever plan to say when I'm an old man.</p>
 
                 <img class='col-md-2 center-block img-responsive img-circle' alt="Responsive image" src="img/pic2.jpg" alt="Profile-Pic">
 
 
                 <div class='col-md-5'>
-                <p>I have MANY passions. I've been a journalist, a multimedia news reporter, and as I mentioned before, a TV advertising salesman.
+                <p class="lead">I have MANY passions. I've been a journalist, a multimedia news reporter, and as I mentioned before, a TV advertising salesman.
                     My biggest passions are sports and anything and everything muscle cars! So why be a developer? Because I plan to join my passions in a way I never imagined as a kid. <br>Stand by for AWESOMENESS!</p>
                 </div>
 
             </div>
         </div>
-        <br>
     </section>
 
     <?php require_once "footer.html" ?>
