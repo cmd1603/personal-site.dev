@@ -77,7 +77,7 @@ extract(pageController());
             </div>
         </div>
     </div>
-t
+    
     <hr>
 
     <div class="simpsonsBackground">
