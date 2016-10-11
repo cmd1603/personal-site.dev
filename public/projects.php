@@ -29,6 +29,25 @@ extract(pageController());
 <h1 class="text-center">Projects/Applications</h1>
 <br>
 
+    <div class="full_width">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="https://fitwager.net" alt="fitwager" target="_blank">
+                        <img src="/img/fitwager.png" alt="fitwager home page" class="img-responsive thumb" style="max-width: 650px">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1">
+                    <p class="lead"><span class="strong">fitwager</span> is a web app that is connected to the Fitbit API. Users are able to log in through their Fitbit account and wager against their friends in exercise challenges.<a class="seeProjectLink" href="https://fitwager.net" target="_blank" alt="fitwager">&nbsp;&nbsp;see project </a></p>
+                    <hr>
+                    <p class="categories_small">php, laravel, html, css, bootstrap, javascript, jquery, fitbit api, o-auth</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
     <div class="row calculator_section">
         <div class="appHolder">
             <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
@@ -42,7 +61,7 @@ extract(pageController());
         </div>
     </div>
 
-    <br>
+    <hr>
 
     <div class="container">
         <div>
@@ -58,16 +77,16 @@ extract(pageController());
             </div>
         </div>
     </div>
-
-    <br>
+t
+    <hr>
 
     <div class="simpsonsBackground">
         <div class="appHolder">
             <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-                <img class="img-responsive" alt="Adlister" src="#">
+                <img class="img-responsive" alt="Adlister" src="/img/pokemon_logo2.jpg">
             </div>
-            <div class="col-sm-7 col-md-7 col-lg-7">
-                <p class="lead">A simple simon game with a theme from "The Simpsons"</p>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1">
+                <p class="lead">A fictional site based on "Craiglist" where users can buy, sell, and trade Pokemon.</p>
                 <p class="languages">JavaScript // jQuery // HTML // CSS</p>
             </div>
         </div>

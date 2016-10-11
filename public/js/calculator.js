@@ -56,7 +56,7 @@ function displayResult () {
 		leftOperand.value = "";
 		rightOperand.value = "";
 		operatorBox.value = "";
-		} else if (operatorBox.value == "*") {
+	} else if (operatorBox.value == "*") {
 		answerBox.value = (parseFloat(leftOperand.value)) * (parseFloat(rightOperand.value));
 		leftOperand.value = "";
 		rightOperand.value = "";
