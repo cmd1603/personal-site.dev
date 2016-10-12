@@ -40,7 +40,7 @@ extract(pageController());
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1">
                     <p class="lead"><span class="strong">fitwager</span> is a web app that is connected to the Fitbit API. Users are able to log in through their Fitbit account and wager against their friends in exercise challenges.<a class="seeProjectLink" href="https://fitwager.net" target="_blank" alt="fitwager">&nbsp;&nbsp;see project ></a></p>
                     <hr>
-                    <p class="categories_small">php, laravel, html, css, bootstrap, javascript, jquery, fitbit api, o-auth</p>
+                    <p class="categories_small">PHP // Laravel // HTML5 // CSS3 // Bootstrap // JavaScript // jQuery // fitbit API, O-Auth</p>
                 </div>
             </div>
         </div>
