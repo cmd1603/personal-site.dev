@@ -42,7 +42,7 @@ extract(pageController());
 			<h2 class="resume_head_gray">Skills</h2>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-					<p><span class="skill_category">Front End</span>HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, AJAX and experience with APIs</p>
+					<p><span class="skill_category">Front End</span>HTML5, CSS3, Twitter Bootstrap, JavaScript, jQuery, AJAX and experience with APIs</p>
 					<p><span class="skill_category">Back End</span>PHP/Laravel, MySQL</p>
 					<p><span class="skill_category">Software</span>Adobe Photoshop/Premiere, Sublime Text, PHP Storm, Sequel Pro</p>
 				</div>

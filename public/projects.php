@@ -51,12 +51,13 @@ extract(pageController());
     <div class="row calculator_section">
         <div class="appHolder">
             <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
-                <img class="img-responsive right" alt="JavaScript calculator" src="/img/calcapp.png">
+                <a href="http://chrisdavila.net/portfolio/calculator.php" alt="calculator" target="_blank">
+                    <img class="img-responsive right" alt="JavaScript calculator" src="/img/calcapp.png">
             </div>
             <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
                 <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
                 <hr>
-                <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
+                <p class="categoriesSmallGray">JavaScript // jQuery // HTML5 // CSS3 // Bootstrap</p>
             </div>
         </div>
     </div>
@@ -69,7 +70,7 @@ extract(pageController());
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <p class="lead">Using the Open Weather Map API and Google Maps API, I created this simple application to show the 3-day weather forecast and a close-up of a location from a user search.<a class="seeProjectLink" href="/portfolio/weather_map.php" alt="Weather Map">&nbsp;&nbsp;see project ></a></p>
                     <hr>
-                    <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS // Bootstrap</p>
+                    <p class="categoriesSmallGray">JavaScript // jQuery // HTML5 // CSS3 // Bootstrap</p>
                 </div>
                 <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
                     <img class="img-responsive" alt="Weather Map" src="/img/weatherapp.png">
@@ -89,7 +90,7 @@ extract(pageController());
                 <p class="lead">A fictional site based on "Craiglist" where users can buy, sell, and trade Pokemon.</p>
                 <p style="font-size: smaller;font-weight: 100;">I claim no rights to any Pokemon characters, images, or anything related to the show. The use of the Pokemon logo was only for fictional and educational purposes.</p>
                 <hr>
-                <p class="categoriesSmallGray">JavaScript // jQuery // HTML // CSS</p>
+                <p class="categoriesSmallGray">JavaScript // jQuery // HTML5 // CSS3</p>
             </div>
         </div>
     </div>
