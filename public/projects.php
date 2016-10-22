@@ -89,6 +89,7 @@ extract(pageController());
             <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
                 <a href="http://personal-site.dev/adlister.dev/index.php">
                 <img class="img-responsive" alt="Adlister" src="/img/pokemon_logo2.jpg">
+                </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1">
                 <p class="lead">A fictional site based on "Craiglist" where users can buy, sell, and trade Pokemon.</p>
