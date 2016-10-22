@@ -87,7 +87,7 @@ extract(pageController());
     <div class="simpsonsBackground">
         <div class="appHolder">
             <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-                <a href="http://personal-site.dev/adlister.dev/index.php">
+                <a href="http://personal-site.dev/portfolio/adlister.dev/">
                 <img class="img-responsive" alt="Adlister" src="/img/pokemon_logo2.jpg">
                 </a>
             </div>
