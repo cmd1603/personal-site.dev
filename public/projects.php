@@ -51,8 +51,9 @@ extract(pageController());
     <div class="row calculator_section">
         <div class="appHolder">
             <div class="col-sm-12 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg--1"><h3>JavaScript Calculator</h3>
-                <a href="http://chrisdavila.net/portfolio/calculator.php" alt="calculator" target="_blank">
+                <a href="http://chrisdavila.net/portfolio/calculator.php" alt="JavaScript Calculator">
                     <img class="img-responsive right" alt="JavaScript calculator" src="/img/calcapp.png">
+                </a>    
             </div>
             <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
                 <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
@@ -73,7 +74,9 @@ extract(pageController());
                     <p class="categoriesSmallGray">JavaScript // jQuery // HTML5 // CSS3 // Bootstrap</p>
                 </div>
                 <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
-                    <img class="img-responsive" alt="Weather Map" src="/img/weatherapp.png">
+                    <a href="http://chrisdavila.net/portfolio/weather_map.php" alt="Weather Map">
+                        <img class="img-responsive" alt="Weather Map" src="/img/weatherapp.png">
+                    </a>    
                 </div>
             </div>
         </div>
@@ -84,6 +87,7 @@ extract(pageController());
     <div class="simpsonsBackground">
         <div class="appHolder">
             <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+                <a href="http://personal-site.dev/adlister.dev/index.php">
                 <img class="img-responsive" alt="Adlister" src="/img/pokemon_logo2.jpg">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1">

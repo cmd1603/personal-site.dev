@@ -16,23 +16,24 @@ function clickNumber () {
 	} else {
 		rightOperand.value += this.innerHTML
 	}
-};
-for (var i = 0; i < numbers.length; i++) {
-	numbers[i].addEventListener('click', clickNumber);
-};
+
+	};
+
+	for (var i = 0; i < numbers.length; i++) {
+		numbers[i].addEventListener('click', clickNumber);
+	};
 
 function clickOperator () {
 	if (leftOperand.value == "") {
 		answerBox.value = "Please enter a value";
 	} else {
-	operatorBox.value = this.innerHTML
+		operatorBox.value = this.innerHTML
 	}
 }
 
-
-for (var i = 0; i < operator.length; i++) {
-	operator[i].addEventListener('click', clickOperator);
-}
+	for (var i = 0; i < operator.length; i++) {
+		operator[i].addEventListener('click', clickOperator);
+	}
 
 function clearEverything () {
 	leftOperand.value = "";
