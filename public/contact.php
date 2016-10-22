@@ -3,7 +3,7 @@
 // OPTIONS - PLEASE CONFIGURE THESE BEFORE USE!
 
 $yourEmail = "chris@chrisdavila.net"; // the email address you wish to receive these mails through
-$yourWebsite = "chrisdavila.net"; // the name of your website
+$yourWebsite = "http://chrisdavila.net"; // the name of your website
 $thanksPage = ''; // URL to 'thanks for sending mail' page; leave empty to keep message on the same page 
 $maxPoints = 4; // max points a person can hit before it refuses to submit - recommend 4
 $requiredFields = "name,email,comments"; // names of the fields you'd like to be required as a minimum, separate each field with a comma
