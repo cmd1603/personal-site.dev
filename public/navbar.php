@@ -18,7 +18,7 @@
                 <li class="<?=$about ?>""><a href="/about.php">about</a></li>
                 <li class="<?=$projects ?>""><a href="/projects.php">projects</a></li>
                 <li class="<?=$resume ?>""><a href="/resume.php">resume</a></li>
-                <li class="<?=$contact ?>""><a href="/contact.php">contact</a></li>
+                <li class="<?=$contact ?>""><a href="/Simple-PHP-Contact-Form-0.1.1/contact-form/index1.php">contact</a></li>
                 <li><a href="mailto:cmd1603@gmail.com">email me</a></li>
             </ul>
             <!-- social media icons -->
