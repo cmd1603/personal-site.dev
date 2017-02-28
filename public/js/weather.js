@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     function loadWeather(latLng) {
         var info = {
-            APPID: "AIzaSyDfwdd_MBV_Ijhzq6C6DJb_BloirQPGZuE",
+            APPID: "AIzaSyBVZ17JsZT3CAL8rm_CD24ctCW0ipWHmeE",
             lat: latLng.lat(),
             lon: latLng.lng(),
             units: 'imperial',
