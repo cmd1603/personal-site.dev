@@ -79,7 +79,13 @@ $(document).ready(function() {
             }
 
 
-            var data = "<div class=\"dayDiv col-md-4\" id=\"boxes\">" + timestamp + "<h3>" + highTemp + "&deg;/" + lowTemp + "&deg;</h3>" + "<p><img alt=\"weather icon\" src=\"http://openweathermap.org/img/w/" + icon + ".png\"></p><p><span class=\"heading\">" + main + ":</span> " + description + "</p><p><span class=\"heading\">Humidity:</span> " + humidity + "&#37;</p><p><span class=\"heading\">Wind:</span> " + wind + " mph</p></div>";
+            var data = "<div class=\"dayDiv col-md-4\" id=\"boxes\">" + timestamp + 
+                            "<h3>" + highTemp + "&deg;/" + lowTemp + "&deg;</h3>" + 
+                            "<p><img alt=\"weather icon\" src=\"http://openweathermap.org/img/w/" + icon + ".png\"></p>\
+                            <p><span class=\"heading\">" + main + ":</span> " + description + "</p>\
+                            <p><span class=\"heading\">Humidity:</span> " + humidity + "&#37;</p>\
+                            <p><span class=\"heading\">Wind:</span> " + wind + " mph</p>\
+                        </div>";
             mapHolder.append(data);
         })
     }
