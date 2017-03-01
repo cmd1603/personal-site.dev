@@ -39,7 +39,7 @@ extract(pageController());
 
 	<?php require_once "../footer.html" ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpqCtja5_cTG5h4K-gJeAhvb5BC1CiXs"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVURvoehzS9TH8mAMbPIEtu-zpBd_dTXI"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="http://momentjs.com/downloads/moment.min.js"></script>
 	<script src="/js/weather.js"></script>
