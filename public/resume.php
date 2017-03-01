@@ -53,6 +53,10 @@ extract(pageController());
 			<h2 class="resume_head_gray">Experience</h2>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h4 class="company">Multicam, Inc., <span class="title">Web Developer</span><span class="dates">[ 10/16 - Current ]</span></h4>
+					<ul>
+						<li>Building an application with jQuery/Laravel that will dynamically create forms to be used as Quotes and Sales Orders</li>
+					</ul>
 					<h4 class="company">Sinclair Broadcast Group, <span class="title">Regional National Sales Assistant </span><span class="dates">[ 02/14 - 05/16 ]</span></h4>
 					<ul>
 						<li>Managed over 8 million in annual advertisement dollars</li>
