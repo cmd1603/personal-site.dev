@@ -56,7 +56,7 @@ extract(pageController());
                 </a>    
             </div>
             <div class="col-sm-12 col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
-                <p class="lead">JavaScript calculator made with custom CSS6, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
+                <p class="lead">JavaScript calculator made with custom CSS3, JavaScript and jQuery<a class="seeProjectLink" href="/portfolio/calculator.php" alt="JavaScript Calculator">&nbsp;&nbsp;see project ></a></p>
                 <hr>
                 <p class="categoriesSmallGray">JavaScript // jQuery // HTML5 // CSS3 // Bootstrap</p>
             </div>
