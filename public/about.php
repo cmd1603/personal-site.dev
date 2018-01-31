@@ -48,7 +48,10 @@ extract(pageController());
                 <p class="lead">I have MANY passions. I've been a journalist, a multimedia news reporter, and as I mentioned before, a TV advertising salesman.
                     My biggest passions are sports and anything and everything muscle cars! So why be a developer? Because I plan to join my passions in a way I never imagined as a kid. <br>Stand by for AWESOMENESS!</p>
                 </div>
-
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="twitter-timeline" href="https://twitter.com/mr_chrisD?ref_src=twsrc%5Etfw">Tweets by mr_chrisD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     </section>
