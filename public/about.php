@@ -22,10 +22,10 @@ extract(pageController());
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <?php require_once "header.php" ?>
+        <?php require "header.php" ?>
 </head>
 <body class="footer-divide">
-    <?php require_once  "navbar.php" ?>
+    <?php require "navbar.php" ?>
 
     <!--- Header and Photo --->
     <!-- first section -->
@@ -49,9 +49,14 @@ extract(pageController());
                     My biggest passions are sports and anything and everything muscle cars! So why be a developer? Because I plan to join my passions in a way I never imagined as a kid. <br>Stand by for AWESOMENESS!</p>
                 </div>
             </div>
+            <h1 style="text-align: center">Tweets!</h1>
+            <hr>
             <div class="row">
-                <div class="col-md-12">
-                    <a class="twitter-timeline" href="https://twitter.com/mr_chrisD?ref_src=twsrc%5Etfw">Tweets by mr_chrisD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <a class="twitter-timeline" data-width="400" data-height="400" data-theme="dark" href="https://twitter.com/mr_chrisD?ref_src=twsrc%5Etfw">Tweets by mr_chrisD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4"></div>    
             </div>
         </div>
     </section>

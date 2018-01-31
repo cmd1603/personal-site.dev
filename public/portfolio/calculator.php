@@ -20,12 +20,12 @@ extract(pageController());
 <!DOCTYPE html>
 <html>
 <head>
-	<?php require_once "../header.php" ?>
+	<?php require "../header.php" ?>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/calculator.css">
 </head>
 <body style="padding-top: 75px;">
-	<?php require_once "../navbar.php" ?>
+	<?php require "../navbar.php" ?>
 <div class="container">
 	<div class="row">
 		<div class="col-md-4"></div>

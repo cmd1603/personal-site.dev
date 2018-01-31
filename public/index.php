@@ -22,10 +22,10 @@ extract(pageController());
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once "header.php" ?>
+    <?php require "header.php" ?>
 </head>
 <body>
-    <?php require_once "navbar.php" ?>
+    <?php require "navbar.php" ?>
     <div class="container">
         <div class="row">
             <div class="col-md-6" style="margin-top: 10%">
