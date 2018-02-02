@@ -12,7 +12,7 @@ function pageController() {
 
 	return $data;
 }
-
+header('Access-Control-Allow-Origin: http://chrisdavila.net', false);
 extract(pageController());
 
 ?>
