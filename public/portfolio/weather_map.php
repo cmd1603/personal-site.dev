@@ -20,7 +20,7 @@ extract(pageController());
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php require_once "../header.php" ?>
+	<?php require_once "../header.php" ?>a
 	<link href="/css/weather.css" type="text/css" rel="stylesheet">
 </head>
 
